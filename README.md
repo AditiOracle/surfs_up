@@ -20,7 +20,7 @@ So for this particular challenge we looked for temperature trends before opening
 
 **Two Additional Queries on June and December Weather Data:**
 
-**Avg Temp and Avg prcp from each station in the month of December**
+**Avg Temperature and Avg Precipitation from each station in the month of December**
 ```
 #Avg Temp and Avg prcp from each station in the month of December
 
@@ -36,7 +36,7 @@ Dec\_Avg\_temp\_prcp\_station.columns=[&quot;Station&quot;,&quot;Avg\_Temperatur
 
 Dec\_Avg\_temp\_prcp\_station
 ```
-**Avg Temp and Avg prcp from each station in the month of June**
+**Avg Temperature and Avg Precipitation from each station in the month of June**
 ```
 #Avg Temp and Avg prcp from each station in the month of June
 
