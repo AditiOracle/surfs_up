@@ -18,8 +18,8 @@ So for this particular challenge we looked for temperature trends before opening
 
 **Summary:** As per my analysis, the ice cream business will surely work throughout the year. There is not much variation in the temperatures. The temperature is best in June and also in December to have the ice-cream business and ice-cream in Oahu.
 
-![Shape2](RackMultipart20220305-4-i1q3lq_html_c3d39f20b5f2ad10.gif) ![Shape1](RackMultipart20220305-4-i1q3lq_html_97aa8e0d812d5cde.gif)
-
+**Two Additional Queries on June and December Weather Data:**
+```
 #Avg Temp and Avg prcp from each station in the month of December
 
 results=session.query(Measurement.station,func.avg(Measurement.tobs),func.avg(Measurement.prcp)).\
@@ -33,7 +33,9 @@ Dec\_Avg\_temp\_prcp\_station=pd.DataFrame(results)
 Dec\_Avg\_temp\_prcp\_station.columns=[&quot;Station&quot;,&quot;Avg\_Temperature&quot;,&quot;Avg\_Precipitation&quot;]
 
 Dec\_Avg\_temp\_prcp\_station
+```
 
+```
 #Avg Temp and Avg prcp from each station in the month of June
 
 results=session.query(Measurement.station,func.avg(Measurement.tobs),func.avg(Measurement.prcp)).\
@@ -47,15 +49,9 @@ June\_Avg\_temp\_prcp\_station=pd.DataFrame(results)
 June\_Avg\_temp\_prcp\_station.columns=[&quot;Station&quot;,&quot;Avg\_Temperature&quot;,&quot;Avg\_Precipitation&quot;]
 
 June\_Avg\_temp\_prcp\_station
+```
 
-Two Additional Queries on June and December Weather Data:
-
-![Shape4](RackMultipart20220305-4-i1q3lq_html_97aa8e0d812d5cde.gif) ![Shape3](RackMultipart20220305-4-i1q3lq_html_18aa4ae329596ae9.gif)
-
-#summary statistics for the June precipitation DataFrame
-
-df\_June\_prcp.describe()
-
+```
 #DataFrame from the list of precipitations for the month of June
 
 results=session.query(Measurement.date,Measurement.prcp).filter(extract(&quot;month&quot;, Measurement.date)==&quot;06&quot;).all()
@@ -65,9 +61,14 @@ df\_June\_prcp=pd.DataFrame(results)
 df\_June\_prcp.columns=[&quot;Date&quot;,&quot;June\_prcp&quot;]
 
 df\_June\_prcp
+```
+```
+#summary statistics for the June precipitation DataFrame
 
-![Shape5](RackMultipart20220305-4-i1q3lq_html_18aa4ae329596ae9.gif)
+df\_June\_prcp.describe()
+```
 
+```
 #DataFrame from the list of precipitations for the month of December
 
 results=session.query(Measurement.date,Measurement.prcp).filter(extract(&quot;month&quot;, Measurement.date)==&quot;12&quot;).all()
@@ -77,9 +78,8 @@ df\_Dec\_prcp=pd.DataFrame(results)
 df\_Dec\_prcp.columns=[&quot;Date&quot;,&quot;Dec\_prcp&quot;]
 
 df\_Dec\_prcp
-
-![Shape6](RackMultipart20220305-4-i1q3lq_html_18aa4ae329596ae9.gif)
-
+```
+```
 #summary statistics for the Decemeber precipitation DataFrame
-
 df\_Dec\_prcp.describe()
+```
