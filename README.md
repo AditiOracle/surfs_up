@@ -19,6 +19,8 @@ So for this particular challenge we looked for temperature trends before opening
 **Summary:** As per my analysis, the ice cream business will surely work throughout the year. There is not much variation in the temperatures. The temperature is best in June and also in December to have the ice-cream business and ice-cream in Oahu.
 
 **Two Additional Queries on June and December Weather Data:**
+
+**Avg Temp and Avg prcp from each station in the month of December**
 ```
 #Avg Temp and Avg prcp from each station in the month of December
 
@@ -34,7 +36,7 @@ Dec\_Avg\_temp\_prcp\_station.columns=[&quot;Station&quot;,&quot;Avg\_Temperatur
 
 Dec\_Avg\_temp\_prcp\_station
 ```
-
+**Avg Temp and Avg prcp from each station in the month of June**
 ```
 #Avg Temp and Avg prcp from each station in the month of June
 
@@ -50,7 +52,7 @@ June\_Avg\_temp\_prcp\_station.columns=[&quot;Station&quot;,&quot;Avg\_Temperatu
 
 June\_Avg\_temp\_prcp\_station
 ```
-
+**DataFrame from the list of Precipitations for the month of June**
 ```
 #DataFrame from the list of precipitations for the month of June
 
@@ -62,12 +64,13 @@ df\_June\_prcp.columns=[&quot;Date&quot;,&quot;June\_prcp&quot;]
 
 df\_June\_prcp
 ```
+**Summary statistics for the June Precipitation DataFrame**
 ```
 #summary statistics for the June precipitation DataFrame
 
 df\_June\_prcp.describe()
 ```
-
+**DataFrame from the list of Precipitations for the month of December**
 ```
 #DataFrame from the list of precipitations for the month of December
 
@@ -79,6 +82,7 @@ df\_Dec\_prcp.columns=[&quot;Date&quot;,&quot;Dec\_prcp&quot;]
 
 df\_Dec\_prcp
 ```
+**Summary statistics for the Decemeber Precipitation DataFrame**
 ```
 #summary statistics for the Decemeber precipitation DataFrame
 df\_Dec\_prcp.describe()
