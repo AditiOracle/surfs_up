@@ -13,6 +13,9 @@ So for this particular challenge we looked for temperature trends before opening
 - The business will be big success through the year. Because there is optimum temperature in the Month of June and December for customer to enjoy ice cream.
 - He has to maintain the temperature of the freezers in this hot weather because the maximum temperature is varying from (83 F- 85 F) and there are chances of ice cream to lose its consistency.
 
+![JUNE TEAMPERATURE DESCRIPTION:](https://github.com/AditiOracle/surfs_up/blob/main/Resources/June_Temperature.PNG)
+![DECEMBER TEAMPERATURE DESCRIPTION:](https://github.com/AditiOracle/surfs_up/blob/main/Resources/December_Temperature.PNG)
+
 **Summary:** As per my analysis, the ice cream business will surely work throughout the year. There is not much variation in the temperatures. The temperature is best in June and also in December to have the ice-cream business and ice-cream in Oahu.
 
 ![Shape2](RackMultipart20220305-4-i1q3lq_html_c3d39f20b5f2ad10.gif) ![Shape1](RackMultipart20220305-4-i1q3lq_html_97aa8e0d812d5cde.gif)
